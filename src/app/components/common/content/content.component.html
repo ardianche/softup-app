@@ -1,0 +1,10 @@
+<div class="content-layout">
+  <div class="content-header">
+    <app-dynamic-tabs [menu]="menuItems" (itemSelection)="itemSelectionHandler($event)"></app-dynamic-tabs>
+  </div>
+  <div class="content-inner">
+      <app-overview *ngIf="selectedView.name == 'Overview'"></app-overview>
+      <app-transactions *ngIf="selectedView.name == 'Transactions'"></app-transactions>
+      <app-orders *ngIf="selectedView.name == 'Orders'"></app-orders>
+  </div>
+</div>

@@ -1,4 +1,6 @@
-# UcxApp
+# Angular Dashboard
+
+This project shall serve as a boilerplate for an angular basic dashboard structure.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 

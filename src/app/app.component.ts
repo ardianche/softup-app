@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationHandlerService } from './services/authentication-handler.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ucx-app';
+  constructor(auth: AuthenticationHandlerService){
+    
+  }
 }

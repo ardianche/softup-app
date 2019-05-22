@@ -1,0 +1,18 @@
+<div class="sidebar-layout">
+  <div class="sidebar-header">
+    <input type="text" placeholder="Search">
+    <mat-icon>search</mat-icon>
+  </div>
+  <div class="sidebar-content">
+    <ul>
+      <li *ngFor = "let item of sidebarItems;let i = index" 
+          (click)="onItemClick(i)"
+          [ngClass]="{'active-list': i == activeItem}">
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-footer">
+
+  </div>
+</div>

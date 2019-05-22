@@ -1,0 +1,19 @@
+<div class="home-layout">
+  <app-header (onAccountSelect)="openSettings()">
+
+  </app-header>
+  <!-- insert dynamic menu here -->
+  <div class="home-inner">
+    <div class="home-inner-content">
+        <app-sidebar>
+
+          </app-sidebar>
+          <app-content>
+        
+          </app-content>
+    </div>
+  </div>
+</div>
+<app-settings *ngIf="settings">
+
+</app-settings>

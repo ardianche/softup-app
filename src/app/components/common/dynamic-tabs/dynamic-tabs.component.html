@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let item of menu;let i = index" 
+      (click) = "selectItem(i)"
+      [ngClass]="{'active-view' : i == activeItem}"
+      [hidden]="hasPrivilege(item.name) == 'No Access'">
+      {{item.name}}
+  </li>
+</ul>
