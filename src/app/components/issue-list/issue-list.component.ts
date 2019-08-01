@@ -13,6 +13,7 @@ export class IssueListComponent implements OnInit {
   public searchKey : any = "";
   public index : any = "";
   public loading :boolean = false;
+  public selectedIssue : any = null;
   
   constructor(private githubService : GithubService) { 
   }
@@ -35,5 +36,10 @@ export class IssueListComponent implements OnInit {
     this.issues = await this.githubService.getIssues(this.searchKey,this.index);
     this.loading = false;
   }
-
+  
+  selectIssue(index){
+    console.log('index: ',index);
+    console.log('this issue : ', this.issues[index]);
+    this.selectedIssue = index;
+  }
 }

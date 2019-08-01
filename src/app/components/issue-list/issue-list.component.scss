@@ -39,6 +39,15 @@
         border: 1px solid lightgray;
         border-radius: 4px;
         box-shadow: 0px 0px 7px 0px lightgrey;
+        display: grid;
+        grid-row-gap: 25px;
+        h4{
+            margin-bottom: 20px;
+        }
+    }
+    .issue-card:hover{
+        cursor: pointer;
+        transform:scale(1.009);
     }
     .issue-card:not(:last-child){
         margin-bottom: 20px;

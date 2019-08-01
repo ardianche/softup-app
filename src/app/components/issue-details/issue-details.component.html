@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let comment of issue">
+    {{comment.body}}
+    <span>
+      {{comment.author.login}}
+    </span>
+  </li>
+</ul>

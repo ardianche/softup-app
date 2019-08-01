@@ -16,9 +16,16 @@
             </div>
       </div>
         <div class="issue-card"
-          *ngFor="let item of issues;let i = index" style = "margin-bottom:20px;">
-            <h4>{{item.title}}</h4>
-            <p>{{item.body }}</p>
+            *ngFor="let issue of issues;let i = index" 
+            style = "margin-bottom:20px;"
+            (click)="selectIssue(i)">
+            <h4>{{issue.title}}</h4>
+            <p>{{issue.body }}</p>
+            <app-issue-details 
+                *ngIf="(selectedIssue != null) && selectedIssue == i"
+                [issue] = "issue.comments">
+              
+            </app-issue-details>
         </div>
       </div>
 </div>

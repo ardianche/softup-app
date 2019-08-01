@@ -67,6 +67,7 @@ app-dummy{
 }
 app-content{
     overflow: hidden;
+    width:100%;
     .content-layout{
         height: 100%;
         overflow-y: scroll;

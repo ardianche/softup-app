@@ -1,0 +1,21 @@
+ul{
+    li{
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        font-style: italic;
+        font-weight: 300;
+        color: gray;
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        word-break: break-word;
+        span{
+            margin-left: auto;
+            font-weight: 600;
+        }
+    }
+    li:not(:last-child){
+        margin-bottom:5px;
+    }
+}

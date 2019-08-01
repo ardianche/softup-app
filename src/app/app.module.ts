@@ -21,6 +21,7 @@ import {GithubService} from './services/GithubService';
 import {IssueListComponent} from './components/issue-list/issue-list.component';
 import { FormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { IssueDetailsComponent } from './components/issue-details/issue-details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     HomeComponent,
     DynamicTabsComponent,
     SettingsComponent,
-    DummyComponent,IssueListComponent
+    DummyComponent,IssueListComponent, IssueDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +54,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 export class AppModule { 
     //DI for apollo and Http client module : 
-    private access_token = 'c449ed59df55aae2ad87e0efb33765078c14a24a';
+    private access_token = 'd1b6b48f0811ad7a04d42854c7b66165a0d12f64';
     constructor(apollo : Apollo, http : HttpLink){
       apollo.create({
         link: http.create({ uri: 'https://api.github.com/graphql?access_token='+this.access_token,method:'POST',withCredentials:false}),
