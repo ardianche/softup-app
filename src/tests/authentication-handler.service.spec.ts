@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AuthenticationHandlerService } from './authentication-handler.service';
+import { AuthenticationHandlerService } from '../app/services/authentication-handler.service';
 
 describe('AuthenticationHandlerService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

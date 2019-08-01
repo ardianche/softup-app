@@ -1,0 +1,78 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+.list-layout{
+
+    .list-layout-header{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+        span{
+            font-weight: 500;
+            text-align: center;
+            font-size: 1.7em;
+        }
+    }
+    position: relative;
+    .list-layout-form{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        input{
+            padding: 11px 10px;
+            min-width: 250px;
+            border: 1px solid whitesmoke;
+            border-radius: 4px;
+        }
+        .options{
+            button{
+                height:100%;
+                font-weight: 600;
+                outline: none;
+            }
+            button:not(:last-child){
+                margin-right:25px;
+            }
+        }
+    }
+    .issue-card{
+        padding: 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        box-shadow: 0px 0px 7px 0px lightgrey;
+    }
+    .issue-card:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top:50%;
+    right:50%;
+    bottom:50%;
+    left:50%;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-color: black transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

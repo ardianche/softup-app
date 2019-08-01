@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DataGeneratorService } from './data-generator.service';
+import { DataGeneratorService } from '../app/services/data-generator.service';
 
 describe('DataGeneratorService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

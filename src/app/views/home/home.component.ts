@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
+import { GithubService } from 'src/app/services/GithubService';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   private eventEmitter: EventEmitter<string>;
   private settings : any;
+
   constructor() { 
     this.eventEmitter = new EventEmitter<string>();
     this.settings = false;

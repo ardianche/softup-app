@@ -1,0 +1,24 @@
+<div class="list-layout">
+  <div class="list-layout-header">
+      <span>Angular Repository Issues</span>
+  </div>
+  <div class="lds-dual-ring" *ngIf="loading == true"></div>
+  <div [hidden]="loading">
+  <div class="list-layout-form">
+          <form class="example-form" name="myForm">
+              <mat-form-field class="example-full-width">
+                <input (keyup)="onInputChange($event)" [(ngModel)] ="searchKey" name="searchKey" matInput placeholder="Search issue here" value="Issue">
+              </mat-form-field>
+            </form>
+            <div class="options">
+              <button (click)="onButtonSelection('open')" [style.background-color]="index == 'open' ? '#2196F3': 'white'">Open</button>
+              <button (click)="onButtonSelection('closed')" [style.background-color]="index == 'closed' ? '#2196F3': 'white'">Closed</button>
+            </div>
+      </div>
+        <div class="issue-card"
+          *ngFor="let item of issues;let i = index" style = "margin-bottom:20px;">
+            <h4>{{item.title}}</h4>
+            <p>{{item.body }}</p>
+        </div>
+      </div>
+</div>

@@ -7,7 +7,7 @@ import { AuthenticationHandlerService } from './services/authentication-handler.
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ucx-app';
+  title = 'Softup';
   constructor(auth: AuthenticationHandlerService){
     
   }
