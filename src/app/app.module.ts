@@ -54,10 +54,9 @@ import { IssueDetailsComponent } from './components/issue-details/issue-details.
 
 export class AppModule { 
     //DI for apollo and Http client module : 
-    // private access_token = 'a307d87d5b0163ed84e4187eba06d8c7be930dd3';
     constructor(apollo : Apollo, http : HttpLink){
       apollo.create({
-        link: http.create({ uri: 'https://api.github.com/graphql?access_token='+'a307d87d5b0163ed84e4187eba06d8c7be930dd3',method:'POST',withCredentials:false}),
+        link: http.create({ uri: 'https://api.github.com/graphql?access_token='+'24fc78e198cecdcb8ed94863f32299fe96d6bc4b',method:'POST',withCredentials:false}),
         cache: new InMemoryCache(),
         defaultOptions: {
           query: {
