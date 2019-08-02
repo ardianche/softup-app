@@ -1,5 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { GithubService } from 'src/app/services/GithubService';
+import { FormsModule } from '@angular/forms';
+import { Apollo } from 'apollo-angular';
+
+@NgModule({
+  imports:[
+    FormsModule,
+  ],
+  providers:[GithubService,Apollo],
+})
 
 @Component({
   selector: 'app-issue-list',

@@ -1,18 +1,23 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule.withRoutes([
+          { path: '', component: AppComponent }
+        ])
       ],
       declarations: [
         AppComponent
       ],
-    }).compileComponents();
-  }));
+      schemas:[CUSTOM_ELEMENTS_SCHEMA]
+    });
+  });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -20,16 +25,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ucx-app'`, () => {
+  it(`should have as title 'Softup'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ucx-app');
+    expect(app.title).toEqual('Softup');
   });
 
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ucx-app!');
-  });
 });

@@ -16,7 +16,6 @@ import { HomeComponent } from './views/home/home.component';
 import {MatIconModule} from '@angular/material/icon';
 import { DynamicTabsComponent } from './components/common/dynamic-tabs/dynamic-tabs.component';
 import { SettingsComponent } from './components/common/settings/settings.component';
-import { DummyComponent } from './components/dummy/dummy.component';
 import {GithubService} from './services/GithubService';
 import {IssueListComponent} from './components/issue-list/issue-list.component';
 import { FormsModule } from '@angular/forms';
@@ -25,6 +24,7 @@ import { IssueDetailsComponent } from './components/issue-details/issue-details.
 
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
     HeaderComponent,
     SidebarComponent,
@@ -32,7 +32,7 @@ import { IssueDetailsComponent } from './components/issue-details/issue-details.
     HomeComponent,
     DynamicTabsComponent,
     SettingsComponent,
-    DummyComponent,IssueListComponent, IssueDetailsComponent
+    IssueListComponent, IssueDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -13,18 +13,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { 
     this.eventEmitter = new EventEmitter<string>();
-    this.settings = false;
-
   }
 
   ngOnInit() {
-  }
-
-  openSettings(){
-    if(this.settings){
-      this.settings = false;
-    }else{
-      this.settings = true;
-    }
   }
 }
