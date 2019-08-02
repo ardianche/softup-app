@@ -1017,7 +1017,7 @@ var DataGeneratorService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"home-layout\">\n  <app-header (onAccountSelect)=\"openSettings()\">\n\n  </app-header>\n  <!-- insert dynamic menu here -->\n  <div class=\"home-inner\">\n    <div class=\"home-inner-content\">\n          <app-content>\n        \n          </app-content>\n    </div>\n  </div>\n</div>\n<app-settings *ngIf=\"settings\">\n\n</app-settings>"
+module.exports = "<div class=\"home-layout\">\n  <app-header>\n\n  </app-header>\n  <!-- insert dynamic menu here -->\n  <div class=\"home-inner\">\n    <div class=\"home-inner-content\">\n          <app-content>\n        \n          </app-content>\n    </div>\n  </div>\n</div>\n<app-settings *ngIf=\"settings\">\n\n</app-settings>"
 
 /***/ }),
 
