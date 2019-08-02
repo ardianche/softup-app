@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { environment } from '../environments/environment';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ApolloModule, Apollo } from 'apollo-angular';
@@ -54,10 +55,10 @@ import { IssueDetailsComponent } from './components/issue-details/issue-details.
 
 export class AppModule { 
     //DI for apollo and Http client module : 
-    // private access_token = 'a307d87d5b0163ed84e4187eba06d8c7be930dd3';
     constructor(apollo : Apollo, http : HttpLink){
+      console.log('process : env' + JSON.stringify(environment));
       apollo.create({
-        link: http.create({ uri: 'https://api.github.com/graphql?access_token='+'a307d87d5b0163ed84e4187eba06d8c7be930dd3',method:'POST',withCredentials:false}),
+        link: http.create({ uri: 'https://api.github.com/graphql?access_token='+environment.access_token,method:'POST',withCredentials:false}),
         cache: new InMemoryCache(),
         defaultOptions: {
           query: {
