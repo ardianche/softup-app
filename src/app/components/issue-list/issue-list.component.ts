@@ -17,7 +17,7 @@ import { Apollo } from 'apollo-angular';
 })
 export class IssueListComponent implements OnInit {
 
-  private issues:[];
+  public issues:[];
 
   public searchKey : any = "";
   public index : any = "";

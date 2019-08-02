@@ -12,9 +12,9 @@ export class DynamicTabsComponent implements OnInit {
   @Input() menu : any;
   @Output() itemSelection = new EventEmitter<string>();
 
-  private authenticationInstance : AuthenticationHandlerService;
+  public authenticationInstance : AuthenticationHandlerService;
 
-  private activeItem: number;
+  public activeItem: number;
 
   constructor(auth: AuthenticationHandlerService) { 
     this.authenticationInstance = auth;

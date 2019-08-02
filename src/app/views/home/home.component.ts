@@ -8,8 +8,8 @@ import { GithubService } from 'src/app/services/GithubService';
 })
 export class HomeComponent implements OnInit {
 
-  private eventEmitter: EventEmitter<string>;
-  private settings : any;
+  public eventEmitter: EventEmitter<string>;
+  public settings : any;
 
   constructor() { 
     this.eventEmitter = new EventEmitter<string>();

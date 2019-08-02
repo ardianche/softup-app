@@ -8,8 +8,8 @@ import { DataGeneratorService } from 'src/app/services/data-generator.service';
 })
 export class SidebarComponent implements OnInit {
 
-  private sidebarItems : any;
-  private activeItem = null;
+  public sidebarItems : any;
+  public activeItem = null;
 
   constructor(dataGen:DataGeneratorService) {
     this.sidebarItems = dataGen.createSideBarMenu();

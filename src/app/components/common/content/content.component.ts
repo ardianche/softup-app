@@ -9,9 +9,9 @@ import { AuthenticationHandlerService } from 'src/app/services/authentication-ha
 })
 export class ContentComponent implements OnInit {
 
-  private menuItems : any;
-  private selectedView : any;
-  private authenticationInstance : AuthenticationHandlerService;
+  public menuItems : any;
+  public selectedView : any;
+  public authenticationInstance : AuthenticationHandlerService;
 
   constructor(auth: AuthenticationHandlerService) {
     this.authenticationInstance = auth;
