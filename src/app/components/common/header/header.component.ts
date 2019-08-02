@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openSettingsBar(){
-    console.log('test');
+    console.log('test123123');
     this.onAccountSelect.emit('open');
     console.log('test');
   }
