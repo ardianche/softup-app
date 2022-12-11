@@ -41,7 +41,7 @@
     "codelyzer": "~4.5.0",
     "core-js": "^2.5.4",
     "dotenv": "^8.0.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "faker": "^4.1.0",
     "graphql": "^14.4.2",
     "graphql-tag": "^2.10.1",
